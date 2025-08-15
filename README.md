@@ -1,46 +1,61 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/RyEig_hB)
-# 🎨 Assignment: CSS Basics & The Box Model
+
+# 🎨 Introduction to CSS: Social Links Profile
 
 ## Overview
 
-This assignment introduces you to the foundational principles of CSS—how to style web content, apply essential styling properties, and understand the powerful concept of the CSS Box Model. You’ll practice writing clean, organized CSS that brings structure and visual appeal to an HTML page.
+This project demonstrates foundational CSS concepts and the Box Model by building a visually appealing social links profile page. The page showcases a profile image, name, location, bio, and a set of styled social links, all using custom CSS.
 
-## Objective
+## Features
 
-Your goal is to create a visually styled web page using only CSS. You will apply basic styling rules to text, backgrounds, and layout elements, and demonstrate an understanding of how the CSS Box Model affects spacing and sizing on the page.
+- **External CSS Styling:** All styles are defined in [`styles.css`](july-2025-introduction-to-css-Virtuoso-fatahi/styles.css) and linked from [`index.html`](july-2025-introduction-to-css-Virtuoso-fatahi/index.html).
+- **Box Model Usage:** The layout uses margin, padding, border-radius, and box-shadow to illustrate the CSS Box Model.
+- **Responsive & Centered Layout:** The profile card is centered and adapts to different screen sizes.
+- **Custom Fonts:** Uses the Inter font from Google Fonts for modern typography.
+- **Profile Image:** Circular avatar with centered alignment.
+- **Styled Social Links:** Interactive buttons for GitHub, Portfolio, LinkedIn, Twitter, and Behance, with hover effects.
 
-## What You'll Practice
+## File Structure
 
-* Connecting CSS to your HTML (external stylesheet)
-* Using basic CSS properties such as `color`, `font-size`, `margin`, `padding`, `border`, and `background`
-* Structuring your layout with awareness of how the Box Model influences spacing and dimensions
-* Writing clean and maintainable CSS selectors and rules
+```
+july-2025-introduction-to-css-Virtuoso-fatahi/
+│
+├── index.html         # Main HTML file
+├── styles.css         # External CSS stylesheet
+├── README.md          # Project documentation
+└── assets/
+    └── images/
+        └── avatar-fatahi.png  # Profile image
+```
 
-## Instructions
+## How It Works
 
-Start with a basic HTML structure and create a separate CSS file named `styles.css`. Link it to your HTML file. Apply various styles to headings, paragraphs, and container sections.
+- **HTML Structure:**  
+  The main content is wrapped in a `<main class="container">` for layout.  
+  - `.profile-image`: Displays the avatar.  
+  - `.profile-header`: Shows name, location, and bio.  
+  - `.profile-link`: Contains social link buttons.
 
-Use the Box Model deliberately—experiment with margin, padding, and borders to see how they affect the layout. Apply background colors to visualize box boundaries. You may also style buttons, navigation, and card-like sections to demonstrate your grasp of spacing and alignment.
+- **CSS Highlights:**  
+  - Universal selector sets `box-sizing: border-box` for predictable sizing.
+  - `.container` uses margin, padding, border-radius, and box-shadow for a card effect.
+  - `.profile-image img` is styled as a circle.
+  - `.btn` class styles links as block-level buttons with hover transitions.
 
-No JavaScript or external CSS libraries (like Bootstrap) should be used.
+## Usage
 
-## Deliverables
+1. **Clone or Download** the repository.
+2. Open [`index.html`](july-2025-introduction-to-css-Virtuoso-fatahi/index.html) in your browser.
+3. Ensure [`styles.css`](july-2025-introduction-to-css-Virtuoso-fatahi/styles.css) and the avatar image are present in the correct paths.
 
-Submit the following files:
+## Customization
 
-* `index.html`: A basic HTML page with structured content.
-* `styles.css`: Your external stylesheet containing all your CSS rules.
+- Replace `avatar-fatahi.png` in `assets/images/` with your own image if desired.
+- Edit the social links in [`index.html`](july-2025-introduction-to-css-Virtuoso-fatahi/index.html) to point to your profiles.
 
-Both files should work together to showcase:
+## Learning Outcomes
 
-* Proper use of selectors and basic styling properties
-* Clear implementation of the CSS Box Model
-* Consistent spacing, sizing, and layout styling
-
-## Tips
-
-* Correct linkage of HTML and CSS files
-* Use of appropriate CSS selectors and properties
-* Demonstration of the Box Model through visual layout (clear use of margin, padding, and borders)
-* Readability and organization of CSS code (indentation, comments, spacing)
-* Overall appearance and clarity of styled content
+- Linking external CSS to HTML.
+- Using selectors and basic properties: `color`, `font-size`, `margin`, `padding`, `border`, `background`.
+- Applying the CSS Box Model for layout and spacing.
+- Writing clean, maintainable CSS.
